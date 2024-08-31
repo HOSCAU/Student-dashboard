@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assessment Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Header -->
+        <header class="dashboard-header">
+            <h1>Assessment Dashboard</h1>
+            <button class="btn-create-assessment">Create New Assessment</button>
+        </header>
+
+        <!-- Search and Filter Section -->
+        <section class="search-filter-section">
+            <input type="text" placeholder="Search assessments..." id="assessment-search-bar">
+            <div class="filters">
+                <select id="assessment-type-filter">
+                    <option value="all">All Types</option>
+                    <option value="quiz">Quiz</option>
+                    <option value="assignment">Assignment</option>
+                    <option value="survey">Survey</option>
+                </select>
+                <select id="sort-by">
+                    <option value="date">Sort by Date</option>
+                    <option value="popularity">Sort by Popularity</option>
+                    <option value="completion">Sort by Completion Rate</option>
+                </select>
+            </div>
+        </section>
+
+        <!-- My Assessments Section -->
+        <section class="my-assessments">
+            <h2>My Assessments</h2>
+            <div id="assessments-list">
+                <!-- List of assessments will be dynamically added here -->
+            </div>
+        </section>
+
+        <!-- Recent Activities Section -->
+        <section class="recent-activities">
+            <h2>Recent Activities</h2>
+            <div id="activities-list">
+                <!-- List of recent activities will be dynamically added here -->
+            </div>
+        </section>
+
+        <!-- Assessment Analytics Summary Section -->
+        <section class="analytics-summary">
+            <h2>Assessment Analytics Summary</h2>
+            <div id="analytics-data">
+                <!-- Analytics summary data will be dynamically added here -->
+            </div>
+        </section>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
